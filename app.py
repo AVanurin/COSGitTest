@@ -8,7 +8,7 @@ def show_main_page():
     return "Hello world!"
 
 @app.route('/Artem')
-def show_main_page():
+def show_my_next():
     return "Zdravstvuyte"
 
 
