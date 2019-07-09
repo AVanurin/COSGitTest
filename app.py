@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -8,9 +8,23 @@ def show_main_page():
     return "Hello world!"
 
 
+
 @app.route('/ррр')
 def showpage():
     return "Hello MIPT!"
+
+@app.route('/Artem')
+def show_my_next():
+    return "Zdravstvuyte"
+
+@app.route('/serghome')
+def show_main_page2():
+    return "..."
+  
+@app.route('/login')
+def show_login_page():
+    return render_template('LoginPage.html')
+
 
 if __name__ == "__main__":
     app.run()
