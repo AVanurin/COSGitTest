@@ -13,9 +13,9 @@ def show_my_next():
     return "Zdravstvuyte"
 
 
-@app.route('/serghome')
+@app.route('/serghome', methods=["POST"])
 def show_main_page2():
-    return "..."
+    return ")))"
 
 
 @app.route('/login', methods=["GET"])
