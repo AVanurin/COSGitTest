@@ -9,7 +9,7 @@ def show_main_page():
 
 @app.route('/login')
 def show_login_page():
-    return render_template('login.html')
+    return render_template('LoginPage.html')
 
 
 if __name__ == "__main__":
