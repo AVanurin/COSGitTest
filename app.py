@@ -12,11 +12,13 @@ def show_main_page():
 def show_my_next():
     return "Zdravstvuyte"
 
+
 @app.route('/serghome')
 def show_main_page2():
     return "..."
-  
-@app.route('/login')
+
+
+@app.route('/login', methods=["GET"])
 def show_login_page():
     return render_template('LoginPage.html')
 
